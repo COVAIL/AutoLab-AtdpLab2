@@ -128,25 +128,25 @@ This example code is provided without copyright and AS IS.  It is free for you t
             Lability_Media          = '2019_x64_Standard_EN_Eval'
         }
 
-        # @{
-        #     NodeName           = 'Collector1'
-        #     IPAddress          = '192.168.3.20'
-        #     #Role = 'DomainJoin' # example of multiple roles @('DomainJoin', 'Web')
-        #     Role               = @('DomainJoin', 'RDP')
-        #     Lability_BootOrder = 20
-        #     Lability_BootDelay = 60 # Number of seconds to delay before others
-        #     Lability_timeZone  = 'US Eastern Standard Time' #[System.TimeZoneInfo]::GetSystemTimeZones()
-        #     Lability_Media          = '2019_x64_Standard_EN_Eval'
-        # }
+        @{
+            NodeName           = 'Collector1'
+            IPAddress          = '192.168.3.20'
+            #Role = 'DomainJoin' # example of multiple roles @('DomainJoin', 'Web')
+            Role               = @('DomainJoin', 'RDP')
+            Lability_BootOrder = 20
+            Lability_BootDelay = 60 # Number of seconds to delay before others
+            Lability_timeZone  = 'US Eastern Standard Time' #[System.TimeZoneInfo]::GetSystemTimeZones()
+            Lability_Media          = '2019_x64_Standard_EN_Eval'
+        }
 
-        # @{
-        #     NodeName           = 'Grandpa1'
-        #     IPAddress          = '192.168.3.55'
-        #     Role               = @('DomainJoin', 'RDP')
-        #     Lability_BootOrder = 20
-        #     Lability_timeZone  = 'US Eastern Standard Time' #[System.TimeZoneInfo]::GetSystemTimeZones()
-        #     Lability_Media          = '2012R2_x64_Standard_EN_Eval'
-        # }
+        @{
+            NodeName           = 'Grandpa1'
+            IPAddress          = '192.168.3.55'
+            Role               = @('DomainJoin', 'RDP')
+            Lability_BootOrder = 20
+            Lability_timeZone  = 'US Eastern Standard Time' #[System.TimeZoneInfo]::GetSystemTimeZones()
+            Lability_Media          = '2012R2_x64_Standard_EN_Eval'
+        }
 
         
         @{
